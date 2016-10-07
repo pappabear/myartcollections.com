@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  name: Lebo
+  description: this is lebo
+
+two:
+  user_id: 1
+  name: Marcus
+  description: this is marcus

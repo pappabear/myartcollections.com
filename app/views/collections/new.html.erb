@@ -1,0 +1,28 @@
+<% provide(:title, 'New Collection') %>
+
+<div class="row">
+
+  <%= render partial: "shared/error_messages", locals: {object: @collection} %>
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h2>Start a New Collection</h2>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+      <% if logged_in? %>
+          <%= render 'form' %>
+      <% else %>
+          You must be a registered user to post announcements to the network.  It's free and easy to join!  C'mon, <a href='/signup'>join</a> us!
+      <% end %>
+
+    </div>
+  </div>
+
+</div>
+</div>
+</div>

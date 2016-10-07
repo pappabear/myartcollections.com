@@ -1,0 +1,19 @@
+<%= form_for @collection, :html => {:class => ''} do |f| %>
+
+    <div class="form-group <%= "has-error".html_safe unless @collection.errors[:name].blank? %>">
+      <%= f.label 'Name' %>
+      <%= f.text_field :name, class: 'form-control border-input input-lg' %>
+    </div>
+
+    <div class="form-group <%= "has-error".html_safe unless @collection.errors[:description].blank? %>">
+      <%= f.label 'Description' %>
+      <%= f.text_area :description, class: 'form-control border-input' %>
+    </div>
+
+    <%= f.submit "Save", class: "btn btn-success btn-fill btn-block" %>
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+<% end %>
+

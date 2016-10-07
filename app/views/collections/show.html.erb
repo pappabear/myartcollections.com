@@ -1,0 +1,74 @@
+<h2><%= @collection.name %>
+
+  <% if current_user.id == @collection.user_id %>
+      <div class="pull-right">
+        <%= link_to 'Edit', edit_collection_path(@collection), class: 'btn btn-simple btn-info' %>
+        <%= link_to 'Delete', @collection, method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-simple btn-danger' %>
+      </div>
+  <% end %>
+
+</h2>
+
+
+<p><%= @collection.description %></p>
+
+<div class="row items-row">
+  <div class="col-md-4 col-sm-4">
+    <div class="card-image">
+      <a href="#">
+        <img src="/PaperKitPro/assets/img/cats.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+      </a>
+      <div class="details details-center">
+        <a href="#">
+          <div class="author">
+            <img src="/PaperKitPro/assets/img/new_logo.png" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+            <div class="text">
+              <span class="name">Creative Tim</span>
+              <div class="meta">Drawn on 23 Nov</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-4">
+    <div class="card-image">
+      <a href="#">
+        <img src="/PaperKitPro/assets/img/fox-2.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+      </a>
+      <div class="details details-center">
+        <a href="#">
+          <div class="author">
+            <img src="/PaperKitPro/assets/img/placeholder.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+            <div class="text">
+              <span class="name">Tom Hanks</span>
+              <div class="meta">Drawn on 23 Jan</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-4">
+    <div class="card-image">
+      <a href="#">
+        <img src="/PaperKitPro/assets/img/cat.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+      </a>
+      <div class="details details-center">
+        <a href="#">
+          <div class="author">
+            <img src="/PaperKitPro/assets/img/chet_faker_2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+            <div class="text">
+              <span class="name">Chet Faker</span>
+              <div class="meta">Drawn on 20 Jan</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -8,3 +8,8 @@ User.create(name: "Michael Hartl", email: "mhartl@example.com", password: "fooba
             activated: true,
             activated_at: Time.zone.now)
 
+
+Collection.create!(user_id: User.first.id, name: "Nano Lopez", description: Faker::Lorem.sentence)
+Collection.create!(user_id: User.first.id, name: "Marcus Glen's Emotion Series", description: Faker::Lorem.sentence)
+Collection.create!(user_id: User.first.id, name: "Lebo acrylic on glass", description: Faker::Lorem.sentence)
+

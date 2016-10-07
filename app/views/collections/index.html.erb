@@ -1,0 +1,48 @@
+<h2>My Collections</h2>
+
+
+<div class="row">
+
+  <div class="table-responsive">
+    <table class="table table-shopping">
+      <tbody>
+
+      <% @collections.each do |c| %>
+          <tr>
+            <td>
+              <div class="img-container">
+                <img src="/images/sample1.jpg" alt="Agenda">
+              </div>
+            </td>
+            <td class="td-product">
+              <strong><%= link_to c.name, c %></strong>
+
+              <p><%= c.description %></p>
+            </td>
+
+            <td>
+              <span class="label label-default shipping">Lebo</span>
+              <span class="label label-default shipping">Acrylic on Canvas</span>
+              <span class="label label-default shipping">Marcus Glen</span>
+              <span class="label label-default shipping">Acrylic</span>
+              <span class="label label-default shipping">Lebo</span>
+              <span class="label label-default shipping">Acrylic on Canvas</span>
+              <span class="label label-default shipping">Marcus Glen</span>
+              <span class="label label-default shipping">Acrylic</span>
+            </td>
+
+          </tr>
+
+      <% end %>
+
+
+      <tr class="tr-actions">
+        <td colspan="3" class="text-right">
+          <a href="/collections/new" class="btn btn-danger btn-fill btn-lg"><i class="fa fa-plus"></i>Start a new collection</a>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
